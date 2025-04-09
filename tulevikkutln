@@ -1,0 +1,68 @@
+# Tuleviku Tallinn 2125 – Tekstimäng (Python)
+# Autor: 11. klassi projekt
+
+import time
+
+def aeglaselt(tekst):
+    for täht in tekst:
+        print(täht, end='', flush=True)
+        time.sleep(0.02)
+    print()
+
+def mäng():
+    aeglaselt("👋 Tere tulemast aastasse 2125 – Tallinn ei ole enam endine.")
+    aeglaselt("Sa ärkad Lasnamäe kuppel-linnas, taevas on roheka varjundiga.")
+    aeglaselt("🕹️ Sinu missioon: teha valikuid, mis määravad linna saatuse.")
+    print()
+
+    aeglaselt("📍 Mida sa teed?")
+    aeglaselt("1. Uurid linna mahajäetud trammitunnelit.")
+    aeglaselt("2. Logid sisse TehnoUnenäkku – virtuaalsesse reaalsusse.")
+    valik1 = input("Sisesta 1 või 2: ")
+
+    if valik1 == "1":
+        print()
+        aeglaselt("🚇 Sa sisened tunnelisse ja leiad vana teadlase päeviku.")
+        aeglaselt("Seal on info, kuidas taastada loodus Tallinna kohal.")
+        print()
+        aeglaselt("1. Järgida päevikut ja käivitada roheprojekt.")
+        aeglaselt("2. Müü info rikastele ja teenida raha.")
+        valik2 = input("Sisesta 1 või 2: ")
+
+        print()
+        if valik2 == "1":
+            aeglaselt("🌱 Sa käivitad roheprojekti! Linn taastub ja loodus naaseb.")
+            aeglaselt("🎉 HEAD LÕPP: Sa päästad Tallinna!")
+        elif valik2 == "2":
+            aeglaselt("💰 Raha tuleb, aga linn hukkub saastesse.")
+            aeglaselt("💀 HALB LÕPP: Ahnus hävitas tuleviku.")
+        else:
+            aeglaselt("🤷 Vale valik – süsteem ei saanud sinust aru.")
+            aeglaselt("💀 MÄNG LÄBI.")
+
+    elif valik1 == "2":
+        print()
+        aeglaselt("🧠 Sind tervitab virtuaalne assistent ELINA3000.")
+        aeglaselt("Tema pakub sulle kahte rada:")
+        aeglaselt("1. Liituda süsteemi arhitektidega – elada igavesti.")
+        aeglaselt("2. Murda süsteemist välja ja ärgata päris maailmas.")
+        valik3 = input("Sisesta 1 või 2: ")
+
+        print()
+        if valik3 == "1":
+            aeglaselt("♾️ Elad igavesti digitaalses paradiisis.")
+            aeglaselt("🤖 NEUTRAALNE LÕPP: Unustad, et olid kunagi päris.")
+        elif valik3 == "2":
+            aeglaselt("😵 Sa ärkad... aga maailm on tühi. Oled viimane ellujäänu.")
+            aeglaselt("🧍 KURI LÕPP: Sa võitsid süsteemi, aga kaotasid kõik.")
+        else:
+            aeglaselt("🤷 Vale valik – süsteem lükkas su välja.")
+            aeglaselt("💀 MÄNG LÄBI.")
+
+    else:
+        print()
+        aeglaselt("🤷 Vale valik – aeg möödus ja sa hukkusid tehisvihmas.")
+        aeglaselt("💀 MÄNG LÄBI.")
+
+# Käivitame mängu
+mäng()
