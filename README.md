@@ -24,5 +24,5 @@ A simple mini-game built using Python and Tkinter. Try to catch the falling red 
 
 1. Clone this repository or download the `.py` file:
    ```bash
-   git clone https://github.com/yourusername/catch-the-ball.git
+   git clone https://github.com/elizabeth-k/catch-the-ball.git
    cd catch-the-ball
